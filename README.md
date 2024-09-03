@@ -1,0 +1,1 @@
+This portfolio showcases key experiences, knowledge, and projects I developed during internships, school, and work. It's not exhaustive due to space limits, but it highlights my growth. Some projects need database setup, so they may not work fully. Explore more of my work on GitHub if you're interested! https://github.com/SGT-coder
