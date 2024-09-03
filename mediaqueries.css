@@ -1,0 +1,292 @@
+/* Mobile-specific adjustments */
+@media screen and (max-width: 768px) {
+  /* General mobile adjustments */
+ 
+
+  /* Navigation adjustments */
+  #desktop-nav {
+    display: none;
+  }
+
+  #hamburger-nav {
+    display: flex;
+    position: relative;
+    top: 1rem;
+    z-index: 1000;
+    padding-right: 2rem;
+    border-radius: 5px;
+  }
+
+  #hamburger-nav div {
+    margin-left: 4rem;
+  }
+
+  #profile{
+    min-height: 60rem;
+    height: auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    position: relative;
+  }
+  #about {
+    min-height: 70rem;
+    height: auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    position: relative;
+    padding: 8rem 5%;
+    max-width: 80%;
+    margin-top: -6rem;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+  .about-containers{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-right: 8px;
+    width:22rem;  }
+
+    
+    #projects .experience-details-container{
+      height: 20rem;
+    width:30rem;
+  }
+ 
+  .article-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-right: 29px;
+    margin-left: -23px;
+    width:8rem;
+  }
+   #projects .article-container img{
+    margin-top:-9px;
+    margin-left: 14px;
+    height: 13rem;
+    width: 12rem;
+  } 
+  #experience{
+    margin-top: -8rem;
+    min-height: 70rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    position: relative;
+  }
+  /* Projects section */
+  #projects {
+    min-height: 138rem;
+    height: auto;
+    margin-top: -1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    position: relative;
+    margin-top: -25rem;
+   margin-bottom: 2rem;
+    overflow: hidden; /* Prevent content from exceeding the background */
+  }
+
+  #projects .about-containers {
+    flex-direction: column;
+    gap: 2rem;
+    height: 2px;
+    width:197rem;
+    margin-left: -25px;
+
+  }
+
+ 
+  .color-container {
+    width: 100%;
+  }
+
+  .project-img {
+    height: auto;
+    width: auto; /* Ensure the image takes full width */
+    object-fit: cover;
+  }
+
+  .project .details-container.color-container {
+    margin-left: 0; /* Remove margin for better layout */
+  }
+
+  .project-content {
+    font-size: 1.2rem; /* Increase font size */
+    line-height: 1.5rem; /* Increase line spacing for readability */
+    overflow: hidden; /* Ensure content stays within container */
+  }
+
+  /* Contact section */
+  #contact {
+    min-height: 40rem;
+    height: auto;
+    margin-top: -4rem;
+    padding-top: 2rem;
+  }
+
+  .contact-info-upper-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  /* Adjust button container for mobile */
+  .btn-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .btn {
+    width: 80%;
+  }
+
+  /* Hide arrows on mobile */
+  .arrow {
+    display: none;
+  }
+
+  /* Ensure proper spacing between sections */
+  section + section {
+    margin-top: 4rem; /* Increase margin to ensure proper spacing */
+  }
+
+  /* Adjust font sizes for better fit */
+  .title {
+    font-size: 2.2rem; /* Slightly increase title size */
+  }
+
+  .section__text__p2 {
+    font-size: 1.2rem; /* Slightly increase paragraph size */
+  }
+
+  /* Ensure all content is visible */
+  .text-container, article {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  #profile {
+    height: 83vh;
+    margin-bottom: 6rem;
+  }
+  .about-containers {
+    flex-wrap: wrap;
+  }
+  #contact,
+  #projects {
+    height: fit-content;
+  }
+  
+}
+
+@media screen and (max-width: 1200px) {
+  section {
+    max-width: 82%; /* Allow more space for smaller screens */
+    padding: 0 2rem; /* Adjust padding for smaller screens */
+  }
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+  }
+  #experience,
+  .experience-details-container {
+    margin-top: 2rem;
+  }
+  #profile,
+  .section-container {
+    display: block;
+  }
+  .arrow {
+    display: none;
+  }
+  section,
+  .section-container {
+    height: fit-content;
+  }
+  section {
+    margin: 0 5%;
+  }
+  .section__pic-container {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 2rem;
+  }
+  .about-containers {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  section {
+    max-width: 100%; /* Use full width for very small screens */
+    padding: 0 1rem; /* Adjust padding for mobile devices */
+  }
+  #contact,
+  footer {
+    height: 40vh;
+  }
+  #profile {
+    height: 83vh;
+    margin-bottom: 0;
+  }
+  article {
+    font-size: 1rem;
+  }
+  footer nav {
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
+  .about-containers,
+  .contact-info-upper-container,
+  .btn-container {
+    flex-wrap: wrap;
+  }
+  .contact-info-container {
+    margin: 0;
+  }
+  .contact-info-container p,
+  .nav-links li a {
+    font-size: 1rem;
+  }
+  .experience-sub-title {
+    font-size: 1.25rem;
+  }
+  .logo {
+    font-size: 1.5rem;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  .section__pic-container {
+    width: auto;
+    height: 46vw;
+    justify-content: center;
+  }
+  .section__text__p2 {
+    font-size: 1.25rem;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .text-container {
+    text-align: justify;
+  }
+}
